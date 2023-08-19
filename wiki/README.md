@@ -30,13 +30,15 @@ All instances are currently housed in [ main.go ](https://github.com/gregidonut/
     }
     ```
 
-we plan on making wasteland a pvp zone( hadn't been clearly defined yet )
+  we plan on making wasteland a pvp zone( hadn't been clearly defined yet )
 
-- Map(no instances yet)
+- Map(no instances yet)  
+  the specification discussed, per last meeting, is 9 maps as tiles in a 9x9 square 
 - Mob  
   we currently have 9 mob instances(including *nameless* boss) which is still
   incomplete some of the biomes lack the specified number of mobs as per business
-  requirements since it should be three for each biome except wasteLand
+  requirements since it should be three for each biome except wasteLand  
+  per last meeting, there should be 17 mobs which is pretty ambitious IMO
     ```go
     biomeInstances := [5]topLevelObjects.Biome{
         {
