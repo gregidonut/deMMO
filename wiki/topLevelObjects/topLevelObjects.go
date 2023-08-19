@@ -1,7 +1,9 @@
 package topLevelObjects
 
+import "github.com/gregidonut/deMMO/wiki/topLevelObjects/biomeTypes"
+
 type Biome struct {
-	Name              string
+	Name              biomeTypes.BiomeType
 	GatheringResource GatheringResource
 	Mobs              []Mob
 }

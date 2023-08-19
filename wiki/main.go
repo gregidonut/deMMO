@@ -1,6 +1,9 @@
 package main
 
-import "github.com/gregidonut/deMMO/wiki/topLevelObjects"
+import (
+	"github.com/gregidonut/deMMO/wiki/topLevelObjects"
+	"github.com/gregidonut/deMMO/wiki/topLevelObjects/biomeTypes"
+)
 
 func main() {
 	// gathering resources need to be declared twice since we are using pointer values
@@ -19,7 +22,7 @@ func main() {
 
 	biomeInstances := [5]topLevelObjects.Biome{
 		{
-			Name:              "muddyPlains",
+			Name:              biomeTypes.BiomeType("muddyPlains"),
 			GatheringResource: WATER_RESOURCE,
 			Mobs: []topLevelObjects.Mob{
 				{
@@ -40,7 +43,7 @@ func main() {
 			},
 		},
 		{
-			Name:              "forest",
+			Name:              biomeTypes.BiomeType("forest"),
 			GatheringResource: WOOD_RESOURCE,
 			Mobs: []topLevelObjects.Mob{
 				{
@@ -59,7 +62,7 @@ func main() {
 			},
 		},
 		{
-			Name:              "rockyPlains",
+			Name:              biomeTypes.BiomeType("rockyPlains"),
 			GatheringResource: ROCK_RESOURCE,
 			Mobs: []topLevelObjects.Mob{
 				{
@@ -76,7 +79,7 @@ func main() {
 			},
 		},
 		{
-			Name:              "desert",
+			Name:              biomeTypes.BiomeType("desert"),
 			GatheringResource: OIL_RESOURCE,
 			Mobs: []topLevelObjects.Mob{
 				{
@@ -95,7 +98,7 @@ func main() {
 			},
 		},
 		{
-			Name:              "wasteland",
+			Name:              biomeTypes.BiomeType("wasteLand"),
 			GatheringResource: nil,
 			Mobs: []topLevelObjects.Mob{
 				// this biome has only one mob(boss)
