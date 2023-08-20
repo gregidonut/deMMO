@@ -17,5 +17,5 @@ all declarations are strictly accounted for.
 
 |  | |
 | ----------- | ----------- |
-| [demibanoski](https://github.com/demibanoski)     | Cheif Vision Officer      |
+| [demibanoski](https://github.com/demibanoski)     | Chief Vision Officer      |
 | [gregidonut](https://github.com/gregiodonut)   | Senior Technical Director    |
